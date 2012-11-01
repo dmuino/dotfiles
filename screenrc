@@ -1,0 +1,7 @@
+defscrollback 10000
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+hardstatus string '%{= kg}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}]%{=b C}[ %d %M %c ]%{W}'
+termcapinfo xterm*|gnome* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+shell -/bin/zsh
