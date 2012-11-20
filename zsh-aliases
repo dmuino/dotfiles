@@ -1,0 +1,6 @@
+alias ssh='TERM=screen /usr/bin/ssh'
+alias scmd=~/git/golang/scmd/scmd
+alias mcmd=~/git/golang/mcmd/mcmd
+alias l='ls -l'
+alias na=". ~/git/dotfiles/aliases.rc"
+

@@ -1,0 +1,19 @@
+cd ~/git/dotfiles
+rm -rf ~/.vim
+mkdir -p ~/.vim/bundle
+ln -s $PWD/gvimrc $PWD/vimrc ~/.vim
+rm -f ~/.vimrc ~/.gvimrc
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+ln -s $PWD/tmux.conf ~/.tmux.conf
+ln -s $PWD/screenrc ~/.screenrc
+ln -s $PWD/zshrc ~/.zshrc
+ln -s $PWD/gitconfig ~/.gitconfig
+
+mkdir -p ~/git
+cd ~/git
+git clone https://github.com/robbyrussell/oh-my-zsh.git
+git clone https://github.com/gmarik/vundle.git
+
+ln -s ~/git/vundle ~/.vim/bundle/
+

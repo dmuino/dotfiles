@@ -1,0 +1,31 @@
+[user]
+	name = Daniel Muino
+	email = dmuino@netflix.com
+[core]
+	excludesfile = /Users/dmuino/.gitignore_global
+
+[merge]
+    tool = threesome
+
+[mergetool "threesome"]
+    cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+    trustExitCode = false
+
+[git-p4]
+    skipSubmitEdit = true
+
+[alias]
+	sync = p4 rebase
+    submit = p4 submit
+    s = status --short
+    co = checkout
+    slog = log --oneline
+    ix = diff --cached
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
