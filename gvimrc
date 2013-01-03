@@ -2,4 +2,4 @@ nmap ,n :tabNext<CR>
 nmap ,p :tabprevious<CR>
 
 colors solarized
-set guifont=Menlo\ for\ Powerline\ 10
+set guifont=Menlo\ for\ Powerline\ 11

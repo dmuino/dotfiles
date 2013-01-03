@@ -42,6 +42,7 @@ source ~/git/dotfiles/zsh-aliases
 [ -f ~/git/dotfiles/zsh-nflx ] && source ~/git/dotfiles/zsh-nflx
 
 export P4EDITOR=vim
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7` 
 
 bindkey -v
 bindkey -M viins '^R' history-incremental-search-backward
